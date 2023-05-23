@@ -21,25 +21,37 @@
     <header class="head">
         <!--Logo-->
         <div class="container main-nav">
-            <nav class="main-nav">
-                <a href="index.html" class="logo link"> Web <span class="logo-item">Studio</span></a> <!--Logo-->
-                <!--Menu Nav-->
-                <ul class="menu-nav list">
-                    <li class="item "><a href="./index.html" class="link active">Studio</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-                    <li class="item"><a href="" class="link">Contacts</a></li>
-                </ul>
-            </nav>
-            <address class="address list">
-                <ul class="contacts list">
-                    <li class="item">
-                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-                    </li>
-                    <li class="item">
-                        <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
-                    </li>
-                </ul>
-            </address>
+
+            <div class="mobile">
+                <button class="menu-toggle-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="icon" width="32" height="22">
+                        <use href="./images/icons.svg#icon-hamburger"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header-nav">
+                <nav class="navig">
+                    <a href="index.html" class="logo link"> Web <span class="logo-item">Studio</span></a> <!--Logo-->
+                    <!--Menu Nav-->
+                    <ul class="menu-nav list">
+                        <li class="item "><a href="./index.html" class="link active">Studio</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                        <li class="item"><a href="" class="link">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <address class="address list">
+                    <ul class="contacts list">
+                        <li class="item">
+                            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                        </li>
+                        <li class="item">
+                            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
         </div>
     </header>
     <main>
@@ -61,8 +73,8 @@
                         <div class="icon"><svg class="" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg></div>
-                        <h3 class="title-fr">Strategy</h3>
-                        <p class="paragraf">
+                        <h3 class="title-fr list">Strategy</h3>
+                        <p class="paragraf list">
                             Our goal is to identify the business problem to walk away with the perfect and creative
                             solution.
                         </p>
@@ -72,8 +84,8 @@
                         <div class="icon"><svg class="" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg></div>
-                        <h3 class="title-fr">Punctuality</h3>
-                        <p class="paragraf">
+                        <h3 class="title-fr list">Punctuality</h3>
+                        <p class="paragraf list">
                             Bring the key message to the brand's audience for the best price within the shortest
                             possible time.
                         </p>
@@ -84,8 +96,8 @@
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg></div>
 
-                        <h3 class="title-fr">Diligence</h3>
-                        <p class="paragraf">
+                        <h3 class="title-fr list">Diligence</h3>
+                        <p class="paragraf list">
                             Research and confirm brands that present the strongest digital growth opportunities and
                             minimize risk.
                         </p>
@@ -95,8 +107,8 @@
                         <div class="icon"><svg class="" width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg></div>
-                        <h3 class="title-fr">Technologies</h3>
-                        <p class="paragraf">Design practice focused on digital experiences. We bring forth a deep
+                        <h3 class="title-fr list">Technologies</h3>
+                        <p class="paragraf list">Design practice focused on digital experiences. We bring forth a deep
                             passion for problem-solving.</p>
                     </li>
                 </ul>
@@ -107,11 +119,18 @@
             <div class="container">
                 <h2 class="title-ab-me">What are we doing</h2>
                 <ul class="product list">
-                    <li class="item"><img src="./images/Section2/Rectangle71-2.jpg" alt="Imac" width="360"></li>
-                    <li class="item"><img src="./images/Section2/Rectangle71-1.jpg"
+                    <li class="item img"><img
+                            srcset="./images/Section2/Rectangle_71@1.jpg 1x, ./images/Section2/Rectangle_71@2x.jpg 2x"
+                            src="./images/Section2/Rectangle_71@1.jpg" alt="Imac" width="360">
+                    </li>
+                    <li class="item img"><img
+                            srcset="./images/Section2/Rectangle_72@1.jpg 1x, ./images/Section2/Rectangle_72@2x.jpg 2x"
+                            src="./images/Section2/Rectangle_72@1.jpg"
                             alt="Phone in which the functionality of the application is shown" width="360">
                     </li>
-                    <li class="item"><img src="./images/Section2/Rectangle71.jpg"
+                    <li class="item img"><img
+                            srcset="./images/Section2/Rectangle_73@1.jpg 1x, ./images/Section2/Rectangle_73@2x.jpg 2x"
+                            src="./images/Section2/Rectangle_73@1.jpg"
                             alt="Phone in the foreground. On the back of a laptop" width="360">
                     </li>
                 </ul>
@@ -120,10 +139,11 @@
         <!--section 3-->
         <section class="team">
             <div class="container">
-                <h2 class="title-team">Our Team</h2>
+                <h2 class="title-team list">Our Team</h2>
                 <ul class="team-li list">
                     <li class="item">
-                        <img src="./images/Section3/img-3.jpg" alt="Man" width="264">
+                        <img srcset="./images/Section3/img-1@1x.jpg 1x, ./images/Section3/img-1@2x.jpg 2x"
+                            src="./images/Section3/img-1@1x.jpg" alt="Man" width="264">
                         <div class="name">
                             <h3 class="title-team-name list">Mark Guerrero</h3>
                             <p class="paragraf list">Product Designer</p>
@@ -165,7 +185,8 @@
 
                     </li>
                     <li class="item">
-                        <img src="./images/Section3/img-2.jpg" alt="Man" width="264">
+                        <img srcset="./images/Section3/img-2@1x.jpg 1x, ./images/Section3/img-2@2x.jpg 2x"
+                            src="./images/Section3/img-2@1x.jpg" alt="Man" width="264">
                         <div class="name">
                             <h3 class="title-team-name list">Tom Ford</h3>
                             <p class="paragraf list">Frontend Developer</p>
@@ -206,7 +227,8 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/Section3/img-1.jpg" alt="Women" width="264">
+                        <img srcset="./images/Section3/img-3@1x.jpg 1x, ./images/Section3/img-3@2x.jpg 2x"
+                            src="./images/Section3/img-3@1x.jpg" alt="Women" width="264">
                         <div class="name">
                             <h3 class="title-team-name list">Camila Garcia</h3>
                             <p class="paragraf list">Marketing</p>
@@ -247,7 +269,8 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/Section3/img.jpg" alt="Man" width="264">
+                        <img srcset="./images/Section3/img-4@1x.jpg 1x, ./images/Section3/img-4@2x.jpg 2x"
+                            src="./images/Section3/img-4@1x.jpg" alt="Man" width="264">
                         <div class="name">
                             <h3 class="title-team-name list">Daniel Wilson</h3>
                             <p class="paragraf list">UI Designer</p>
@@ -442,6 +465,63 @@
             <button type="submit" class="btn-send">Send</button>
         </div>
     </div>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle-close js-close-menu">
+            <svg class="icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu list">
+            <li class="item "><a href="./index.html" class="link active">Studio</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+            <li class="item"><a href="" class="link">Contacts</a></li>
+        </ul>
+        <ul class="cnt list">
+            <li class="item-cnt">
+                <a href="tel:+110001111111" class="link-cnt">+11 (000) 111-11-11</a>
+            </li>
+            <li class="item-cnt">
+                <a href="mailto:info@devstudio.com" class="link-cnt">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="social-mob list">
+            <li class="item-scl">
+                <a href="" class="icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg width="24" height="24" class="label">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="item-scl">
+                <a href="" class="icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <svg width="24" height="24" class="label">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="item-scl">
+                <a href="" class="icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg width="24" height="24" class="label">
+                        <use href="./images/icons.svg#icon-facebook"> </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="item-scl">
+                <a href="" class="icon" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+                    <svg width="24" height="24" class="label">
+                        <use href="./images/icons.svg#icon-linkedin"> </use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
